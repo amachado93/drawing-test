@@ -3,7 +3,9 @@ function setup(){
 }
 
 function draw(){
-  fill(255, 224, 250);
-  noStroke();
-  ellipse(mouseX, mouseY, 10, 10);
+  if (mouseIsPressed){
+    fill(255, 224, 250);
+    noStroke();
+    ellipse(mouseX, mouseY, 10, 10);
+  } else {}
 }
